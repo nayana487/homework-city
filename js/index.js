@@ -12,29 +12,24 @@ $("#submit-btn").click(change);
 
 function change() {
 	var city = $("#city-type").val().trim();
-	// Defines user-inputted city and removes extra spaces before and after string. 
+	// Defines user-inputted city and removes extra spaces before and after string.
 
 	if (city == "New York" || city == "NYC" || city == "New York City") {
-		$("body").removeClass();
-		$("body").addClass("nyc");
+		$("body").removeClass().addClass("nyc");
 	}
 	// Removes existing class.
 	// Adds a new class (with background defined in CSS). 
 	else if (city == "San Francisco" || city == "SF" || city == "Bay Area") {
-		$("body").removeClass();
-		$("body").addClass("sf");	
+		$("body").removeClass().addClass("sf");
 	}
 	else if (city == "Los Angeles" || city == "LA" || city == "LAX") {
-		$("body").removeClass();
-		$("body").addClass("la");		
+		$("body").removeClass().addClass("la");	
 	}
 	else if (city == "Austin" || city == "ATX") {
-		$("body").removeClass();
-		$("body").addClass("austin");		
+		$("body").removeClass().addClass("austin");	
 	}
 	else if (city == "Sydney" || city == "SYD") {
-		$("body").removeClass();
-		$("body").addClass("sydney");		
+		$("body").removeClass().addClass("sydney");	
 	}
 	else {
 		$("body").removeClass();
